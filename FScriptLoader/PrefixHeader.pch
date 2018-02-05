@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  FScriptLoader
+//
+//  Created by Wolfgang Baird on 2/4/18.
+//Copyright © 2018 Wolfgang Baird. All rights reserved.
+//
+
+#ifndef FScriptLoader_PrefixHeader_pch
+#define FScriptLoader_PrefixHeader_pch
+
+#import <Cocoa/Cocoa.h>
+#import "ZKSwizzle.h"
+
+#endif
+

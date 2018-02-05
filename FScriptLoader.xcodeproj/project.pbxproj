@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB843E9D2027E31E00280CCE /* FScriptLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = FB843E9C2027E31E00280CCE /* FScriptLoader.m */; };
+		FB843EA12027E31E00280CCE /* ZKSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = FB843EA02027E31E00280CCE /* ZKSwizzle.m */; };
+		FB843EA32027E31E00280CCE /* PrefixHeader.pch in Resources */ = {isa = PBXBuildFile; fileRef = FB843EA22027E31E00280CCE /* PrefixHeader.pch */; };
+		FB843EAF2027E65C00280CCE /* FScript.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB843EA92027E3C600280CCE /* FScript.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FB843EAD2027E63B00280CCE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FB843EAF2027E65C00280CCE /* FScript.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FB843E902027E31E00280CCE /* FScriptLoader.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FScriptLoader.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB843E992027E31E00280CCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB843E9C2027E31E00280CCE /* FScriptLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FScriptLoader.m; sourceTree = "<group>"; };
+		FB843E9F2027E31E00280CCE /* ZKSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ZKSwizzle.h; path = ZKSwizzle/ZKSwizzle.h; sourceTree = "<group>"; };
+		FB843EA02027E31E00280CCE /* ZKSwizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ZKSwizzle.m; path = ZKSwizzle/ZKSwizzle.m; sourceTree = "<group>"; };
+		FB843EA22027E31E00280CCE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FB843EA92027E3C600280CCE /* FScript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FScript.framework; path = FScriptLoader/FScript.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB843E8D2027E31E00280CCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB843E872027E31E00280CCE = {
+			isa = PBXGroup;
+			children = (
+				FB843E972027E31E00280CCE /* FScriptLoader */,
+				FB843E922027E31E00280CCE /* Frameworks */,
+				FB843E912027E31E00280CCE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB843E912027E31E00280CCE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB843E902027E31E00280CCE /* FScriptLoader.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB843E922027E31E00280CCE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB843EA92027E3C600280CCE /* FScript.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB843E972027E31E00280CCE /* FScriptLoader */ = {
+			isa = PBXGroup;
+			children = (
+				FB843E9C2027E31E00280CCE /* FScriptLoader.m */,
+				FB843E9E2027E31E00280CCE /* ZKSwizzle */,
+				FB843E982027E31E00280CCE /* Supporting Files */,
+			);
+			path = FScriptLoader;
+			sourceTree = "<group>";
+		};
+		FB843E982027E31E00280CCE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB843E992027E31E00280CCE /* Info.plist */,
+				FB843EA22027E31E00280CCE /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB843E9E2027E31E00280CCE /* ZKSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				FB843E9F2027E31E00280CCE /* ZKSwizzle.h */,
+				FB843EA02027E31E00280CCE /* ZKSwizzle.m */,
+			);
+			name = ZKSwizzle;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB843E8F2027E31E00280CCE /* FScriptLoader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB843EA62027E31E00280CCE /* Build configuration list for PBXNativeTarget "FScriptLoader" */;
+			buildPhases = (
+				FB843E8C2027E31E00280CCE /* Sources */,
+				FB843E8D2027E31E00280CCE /* Frameworks */,
+				FB843E8E2027E31E00280CCE /* Resources */,
+				FB843EAD2027E63B00280CCE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FScriptLoader;
+			productName = FScriptLoader;
+			productReference = FB843E902027E31E00280CCE /* FScriptLoader.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB843E882027E31E00280CCE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Wolfgang Baird";
+				TargetAttributes = {
+					FB843E8F2027E31E00280CCE = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FB843E8B2027E31E00280CCE /* Build configuration list for PBXProject "FScriptLoader" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FB843E872027E31E00280CCE;
+			productRefGroup = FB843E912027E31E00280CCE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB843E8F2027E31E00280CCE /* FScriptLoader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB843E8E2027E31E00280CCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB843EA32027E31E00280CCE /* PrefixHeader.pch in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB843E8C2027E31E00280CCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB843E9D2027E31E00280CCE /* FScriptLoader.m in Sources */,
+				FB843EA12027E31E00280CCE /* ZKSwizzle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FB843EA42027E31E00280CCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		FB843EA52027E31E00280CCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		FB843EA72027E31E00280CCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DEVELOPMENT_TEAM = EX596BNL45;
+				DSTROOT = /;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FScriptLoader",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FScriptLoader/PrefixHeader.pch;
+				INFOPLIST_FILE = FScriptLoader/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/SIMBL/Plugins";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_BUNDLE_IDENTIFIER = org.w0lf.FScriptLoader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		FB843EA82027E31E00280CCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DEVELOPMENT_TEAM = EX596BNL45;
+				DSTROOT = /;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FScriptLoader",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FScriptLoader/PrefixHeader.pch;
+				INFOPLIST_FILE = FScriptLoader/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/SIMBL/Plugins";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_BUNDLE_IDENTIFIER = org.w0lf.FScriptLoader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB843E8B2027E31E00280CCE /* Build configuration list for PBXProject "FScriptLoader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB843EA42027E31E00280CCE /* Debug */,
+				FB843EA52027E31E00280CCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB843EA62027E31E00280CCE /* Build configuration list for PBXNativeTarget "FScriptLoader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB843EA72027E31E00280CCE /* Debug */,
+				FB843EA82027E31E00280CCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB843E882027E31E00280CCE /* Project object */;
+}
