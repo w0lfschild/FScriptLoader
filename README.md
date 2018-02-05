@@ -10,7 +10,7 @@
 
 # Purpose
 Runtime exploration of Objective-C and Objective-C++ programs through F-Script's Object Browser and Console.
-Specifically, this plugin comes in handy when the program you want to explore disables debugger-attaching (so you can't use it to load the F-Script framework), or when the program has no menu bar (such as a status-bar-only app). In these cases, use EasySIMBL to load this plugin, and then use the shortcuts to control F-Script ! (see below for detailed instructions).
+Specifically, this plugin comes in handy when the program you want to explore disables debugger-attaching, or when the program has no menu bar. In these cases, use mySIMBL to load this plugin, and then use the shortcuts to control F-Script.
 
 # Note:
 
