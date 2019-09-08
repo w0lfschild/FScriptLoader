@@ -10,7 +10,7 @@
 
 # Purpose
 Runtime exploration of Objective-C and Objective-C++ programs through F-Script's Object Browser and Console.
-Specifically, this plugin comes in handy when the program you want to explore disables debugger-attaching, or when the program has no menu bar. In these cases, use mySIMBL to load this plugin, and then use the shortcuts to control F-Script.
+Specifically, this plugin comes in handy when the program you want to explore disables debugger-attaching, or when the program has no menu bar. In these cases, use [MacForge](https://github.com/w0lfschild/app_updates/raw/master/MacForge/MacForge.zip) to load this plugin, and then use the shortcuts to control F-Script.
 
 # Note:
 
@@ -19,11 +19,10 @@ Specifically, this plugin comes in handy when the program you want to explore di
 
 # Installation:
 
-1. Download [mySIMBL](https://github.com/w0lfschild/app_updates/raw/master/mySIMBL/mySIMBL_master.zip)
-2. Download [FScriptLoader](https://github.com/w0lfschild/FScriptLoader/raw/master/build/FScriptLoader.bundle.zip)
-3. Unzip downloads
-4. Open `FScriptLoader.bundle` with `mySIMBL.app`
-5. Restart any application you want to have FScriptLoader injected into
+1. Download [MacForge](https://github.com/w0lfschild/app_updates/raw/master/MacForge/MacForge.zip)
+2. Open MacForge and search for FScriptLoader
+3. Click `GET`
+4. FScriptLoader should be automatically injected into all running processes and future process
 
 # How to use:
 * Use the newly created `F-Script` item in the app's main menu (in the top menu bar).
