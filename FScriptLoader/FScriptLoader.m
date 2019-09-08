@@ -67,13 +67,13 @@
     if( !self ) return nil;
     menuItem = [NSClassFromString(@"FScriptMenuItem").alloc init];
 
-    [NSEvent addGlobalMonitorForEventsMatchingMask:NSKeyDownMask
+    [NSEvent addGlobalMonitorForEventsMatchingMask:NSEventMaskKeyDown
                                            handler:^(NSEvent *event){
                                                if ([event modifierFlags] == 1704234 && [event keyCode] == 8) {
                                                    /*CMD, ALT, SHIFT + C*/
-                                                   [menuItem performSelector:@selector(showConsole:) withObject:nil];
+                                                   [self->menuItem performSelector:@selector(showConsole:) withObject:nil];
                                                } else if ([event modifierFlags] == 1704234 && [event keyCode] == 31) {
-                                                   [menuItem performSelector:@selector(openObjectBrowser:) withObject:nil];
+                                                   [self->menuItem performSelector:@selector(openObjectBrowser:) withObject:nil];
                                                }
                                            }];
     
@@ -81,10 +81,10 @@
     monitorHandler = ^NSEvent * (NSEvent * event){
         if ([event modifierFlags] == 1704234 && [event keyCode] == 8) {
             /*CMD, ALT, SHIFT + C*/
-            [menuItem performSelector:@selector(showConsole:) withObject:nil];
+            [self->menuItem performSelector:@selector(showConsole:) withObject:nil];
             return nil;
         } else if ([event modifierFlags] == 1704234 && [event keyCode] == 31) {
-            [menuItem performSelector:@selector(openObjectBrowser:) withObject:nil];
+            [self->menuItem performSelector:@selector(openObjectBrowser:) withObject:nil];
             return nil;
         }
         // Return the event, a new event, or, to stop
@@ -92,7 +92,7 @@
         return event;
     };
     
-    eventMonitor = [NSEvent addLocalMonitorForEventsMatchingMask:NSKeyDownMask
+    eventMonitor = [NSEvent addLocalMonitorForEventsMatchingMask:NSEventMaskKeyDown
                                                          handler:monitorHandler];
     return self;
 }

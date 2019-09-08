@@ -4,7 +4,7 @@
 
 # Information:
 
-- Designed for 10.10+
+- Designed for 10.13+
 - mySIMBL plugin to help explore cocoa applications on macOS
 - Author: [w0lfschild](https://github.com/w0lfschild)
 
