@@ -41,7 +41,7 @@
 
 + (void)load {
     NSLog(@"fscriptloader : %@", NSBundle.mainBundle.bundleIdentifier);
-    NSArray *blackList = [[NSArray alloc] initWithObjects:@"com.apple.dock", nil];
+    NSArray *blackList = [[NSArray alloc] initWithObjects:@"com.apple.dock", @"com.apple.loginwindow", nil];
     NSUInteger osx_ver = [[NSProcessInfo processInfo] operatingSystemVersion].minorVersion;
     if (![blackList containsObject:NSBundle.mainBundle.bundleIdentifier]) {
         // Load F-Script
